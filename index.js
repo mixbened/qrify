@@ -8,7 +8,7 @@ const app = express()
 dotenv.config()
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/', (req, res) => res.send('We are rocking with secure data.'))
-app.post('/scan', handler.scanPage)
+app.get('/', (req, res) => res.send('We are rocking with sustainable website data.'))
+app.post('/add-report', handler.addReport)
 
 app.listen(PORT, () => console.log('We are rocking: ' + PORT))
